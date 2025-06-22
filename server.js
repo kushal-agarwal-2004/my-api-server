@@ -15,7 +15,8 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(err => console.log(err));
 
 // CREATE - Add new todo
-const Todo = require('./todo');
+const Todo = require('./models/todo');
+
 
 
 app.post('/api/todos', async (req, res) => {
